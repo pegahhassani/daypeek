@@ -8,12 +8,12 @@
   --bg-div-color: #3d3d3d;
   --text-main-color: #ffffff;
   --text-secondary-color: #ffffff66;
-  --bg-btn-color: #292929;
   --text-btn-color: #242424;
   --bg-subtitle-news-color: #00000063;
 
-  --font-xl: 28px;
-  --font-lg: 24px;
+  --font-xxl: 28px;
+  --font-xl: 24px;
+  --font-lg: 20px;
   --font-md: 16px;
   --font-sm: 12px;
 
@@ -22,7 +22,9 @@
   --font-bolder: 600;
 
   --border-radius: 16px;
+  --border-radius-sm: 8px;
   --padding: 16px;
+  --padding-sm: 8px;
   --gap: 16px;
 }
 
@@ -54,7 +56,7 @@ p {
 }
 
 h2 {
-  font-size: var(--font-lg);
+  font-size: var(--font-xl);
 }
 
 h3 {
@@ -97,7 +99,7 @@ h3 {
 }
 
 .weather-details h2 {
-  font-size: var(--font-xl);
+  font-size: var(--font-xxl);
 }
 
 /* calender */
@@ -121,4 +123,93 @@ h3 {
 
 .reminder-list li:last-child {
   border-left: solid 2px #29e489;
+}
+
+/* email */
+.email-image {
+  margin-left: -12px;
+  margin-top: 6px;
+}
+
+.email-title {
+  margin-bottom: var(--gap);
+}
+
+.emails-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.emails-list li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #29292980;
+}
+
+.emails-list li:last-child {
+  border: none;
+}
+
+.email-items--details {
+  padding-left: 12px;
+}
+
+.email-items--details h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 318px;
+}
+
+/* mood */
+.mood-title {
+  margin-bottom: var(--gap);
+}
+
+.mood-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.mood-list li {
+  background-color: var(--bg-body-color);
+  width: calc((100% / 3) - var(--gap) + (var(--gap) / 3));
+  text-align: center;
+  border-radius: var(--border-radius-sm);
+  padding: var(--padding-sm);
+}
+
+.mood-list li p {
+  font-size: var(--font-md);
+  color: var(--text-main-color);
+  font-weight: var(--font-bolder);
+}
+
+/* quote */
+.quote-title {
+  margin-bottom: 29px;
+}
+
+.quote-subtitle {
+  position: relative;
+  min-height: 80px;
+}
+
+.quote-subtitle p {
+  font-size: var(--font-lg);
+  color: #ffffffcc;
+}
+
+.quote-subtitle .sub-badge {
+  font-size: var(--font-sm);
+  color: var(--text-secondary-color);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.news-wrapper {
+  display: none;
 }

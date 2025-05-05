@@ -213,3 +213,73 @@ h3 {
 .news-wrapper {
   display: none;
 }
+
+@media (width > 1300px) {
+  .container {
+    width: 1280px;
+  }
+
+  body {
+    padding: 93px 0;
+  }
+
+  .news-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+  }
+
+  .news-wrapper .news-nav {
+    display: flex;
+    gap: 10px;
+    color: var(--text-btn-color);
+    font-size: var(--font-md);
+    font-weight: var(--font-bolder);
+  }
+
+  .nav li {
+    padding: var(--padding-sm) var(--padding);
+    text-align: center;
+  }
+
+  .nav li:first-child {
+    color: var(--text-main-color);
+    background-color: var(--bg-body-color);
+    border-radius: var(--border-radius-sm);
+  }
+
+  .widget-wrapper {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "weather news news"
+      "calender news news"
+      "email quote mood";
+  }
+
+  .weather-wrapper {
+    grid-area: weather;
+  }
+
+  .calender-wrapper {
+    grid-area: calender;
+  }
+
+  .news-wrapper {
+    grid-area: news;
+  }
+
+  .email-wrapper {
+    grid-area: email;
+  }
+
+  .quote-wrapper {
+    grid-area: quote;
+  }
+
+  .mood-wrapper {
+    grid-area: mood;
+  }
+}

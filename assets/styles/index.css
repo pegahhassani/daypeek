@@ -65,7 +65,7 @@ h3 {
 }
 
 .container {
-  width: 398px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -80,6 +80,7 @@ h3 {
   padding: var(--padding);
   border-radius: var(--border-radius);
   margin-bottom: var(--gap);
+  box-shadow: 0 4px 8px #00000024;
 }
 
 /* Weather */
